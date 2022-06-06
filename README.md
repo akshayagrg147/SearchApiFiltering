@@ -12,26 +12,16 @@ function
             }
 
             override fun onQueryTextChange(newText: String): Boolean {
-
-                searchAdapter?.filter?.filter(newText)
-
-
-                return true
+  searchAdapter?.filter?.filter(newText)
+     return true
             }
 
         })
         
         
         
-        
-        
-        
         --------------------------------------------------------------------------------------------------------------------------------------
-        
-        
-        
-        
-        
+         
         //search adapter
         class SearchAdpter(
 
@@ -49,9 +39,7 @@ function
     init {
         result_itemList = data as ArrayList<Data>
     }
-
-
-   inner class LibrarylistRecyclerViewHolder(
+  inner class LibrarylistRecyclerViewHolder(
         private val binding: ItemSearchBinding
     ) :
         RecyclerView.ViewHolder(binding.root) {
